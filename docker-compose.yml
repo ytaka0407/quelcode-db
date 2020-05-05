@@ -9,7 +9,7 @@ services:
       - ./mysql5.7/mysqlvolume:/mysqlvolume
     ports:
       - 13306:3306
-    enviroment:
+    environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=test
       - MYSQL_USER=test
