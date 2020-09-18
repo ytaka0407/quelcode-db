@@ -9,17 +9,18 @@ quelcode-php
 │   ├── mysql .................. 起動すると作られる。データ永続化用
 │   ├── mysqlvolume ............ mysqlコンテナにマウントされる。ホストとのファイル受け渡し用
 │   └── my.cnf ................. mysqlコンテナの設定ファイル
-│  
+│
 ├── .gitignore
 ├── docker-compose.yml
 └── README.md
 ```
 
 ## データベース情報
-MySQLバージョン 5.7.x
 
-## phpMyAdmin接続方法
+MySQL バージョン 5.7.x
 
-Dockerを立ち上げた後以下のアドレスにアクセスする
+## phpMyAdmin 接続方法
 
-http://localhost:10081
+Docker を立ち上げた後以下のアドレスにアクセスする
+
+http://localhost:10281
