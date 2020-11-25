@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <mxfile host="65bd71144e" modified="2020-11-25T13:38:27.445Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="KwnfMGMP5RTE4XFrkh9d" version="13.6.5">
+=======
+<mxfile host="65bd71144e" modified="2020-11-25T13:28:16.784Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="7azfF_voRHbA6xXxRz18" version="13.6.5">
+>>>>>>> b92ec9397356229906add86974aaa8b683e16b57
     <diagram id="a3JUaDs7XSauVLccwMSm" name="Page-1">
         <mxGraphModel dx="974" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -145,7 +149,11 @@
                 <mxCell id="77" value="ダイレクトチャットフラグ" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
                     <mxGeometry y="146" width="200" height="30" as="geometry"/>
                 </mxCell>
+<<<<<<< HEAD
                 <mxCell id="104" value="作成者id" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
+=======
+                <mxCell id="104" value="作成者" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="25">
+>>>>>>> b92ec9397356229906add86974aaa8b683e16b57
                     <mxGeometry y="176" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="102" value="作成日時" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
@@ -154,7 +162,11 @@
                 <mxCell id="101" value="更新日時" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
                     <mxGeometry y="236" width="200" height="30" as="geometry"/>
                 </mxCell>
+<<<<<<< HEAD
                 <mxCell id="103" value="更新者id" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
+=======
+                <mxCell id="103" value="更新者" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
+>>>>>>> b92ec9397356229906add86974aaa8b683e16b57
                     <mxGeometry y="266" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="81" value="論理削除" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
