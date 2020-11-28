@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2020-11-28T02:20:54.774Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="H95dqYJaXDhuqSxAwKBt" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-28T02:22:53.197Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="q0CToxxtmcVQrkfXR9n3" version="13.6.5">
     <diagram id="a3JUaDs7XSauVLccwMSm" name="Page-1">
-        <mxGraphModel dx="974" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="718" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -14,7 +14,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="93" value="" style="fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="21" target="106" edge="1">
+                <mxCell id="93" value="" style="fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="20" target="106" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
                         <mxPoint x="570" y="201" as="sourcePoint"/>
                         <mxPoint x="210" y="120" as="targetPoint"/>
@@ -43,7 +43,7 @@
                         <mxPoint x="60" y="201" as="targetPoint"/>
                         <Array as="points">
                             <mxPoint x="10" y="761"/>
-                            <mxPoint x="10" y="201"/>
+                            <mxPoint x="10" y="171"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -65,19 +65,19 @@
                 <mxCell id="37" value="担当者id(FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
                     <mxGeometry y="86" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="更新者id(FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
+                <mxCell id="106" value="進捗(完了・未完)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
                     <mxGeometry y="116" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="106" value="進捗(完了・未完)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
+                <mxCell id="38" value="タスク期限" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
                     <mxGeometry y="146" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="タスク期限" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
+                <mxCell id="39" value="登録チャットルームid(FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
                     <mxGeometry y="176" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="登録チャットルームid(FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
+                <mxCell id="41" value="作成者id(FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
                     <mxGeometry y="206" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="作成者id(FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
+                <mxCell id="43" value="更新者id(FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
                     <mxGeometry y="236" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="40" value="作成日時" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="35" vertex="1">
