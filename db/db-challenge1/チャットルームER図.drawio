@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2020-11-26T08:33:30.119Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="lzl85ctAeYaJ69f9DTSJ" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-28T02:03:25.676Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="W42T-XM4J7r9-eNyL6St" version="13.6.5">
     <diagram id="a3JUaDs7XSauVLccwMSm" name="Page-1">
-        <mxGraphModel dx="1230" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1057" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -92,7 +92,7 @@
                 <mxCell id="10" value="利用者情報" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="570" y="40" width="192.67" height="330" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="利用者id（PK/FK）" style="text;strokeColor=none;fillColor=none;spacingLeft=8;spacingRight=0;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;aspect=fixed;" parent="10" vertex="1">
+                <mxCell id="11" value="利用者id（PK）" style="text;strokeColor=none;fillColor=none;spacingLeft=8;spacingRight=0;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;aspect=fixed;" parent="10" vertex="1">
                     <mxGeometry y="26" width="192.67" height="34" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="メールアドレス" style="text;strokeColor=none;fillColor=none;spacingLeft=8;spacingRight=0;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;aspect=fixed;" parent="10" vertex="1">
@@ -125,7 +125,7 @@
                 <mxCell id="25" value="チャットルーム" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="80" y="600" width="200" height="326" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="チャットルームid(PK/FK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
+                <mxCell id="26" value="チャットルームid(PK)" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
                     <mxGeometry y="26" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" value="チャット名" style="text;strokeColor=none;fillColor=none;spacingLeft=7;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="25" vertex="1">
