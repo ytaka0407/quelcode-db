@@ -28,3 +28,14 @@ CREATE TABLE chatroom_joined_list(
     joined_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
     PRIMARY KEY(member_id, chatroom_id)
 );
+CREATE TABLE posts(
+    post_id integer(10) PRIMARY KEY,
+    chatroom_id integer(10) NOT NULL REFERENCES chatrooms(room_id),
+    post_text varchar(1000) NOT NULL,
+    post_filename varchar(10),
+    is_deleted tinyint(1) DEFAULT 0 NOT NULL,
+    post_member_id integer(10) NOT NULL REFERENCES members(user_id),
+    update_member_id integer(10) NOT NULL REFERENCES members(user_id),
+    created_at datetime DEFAULT current_timestamp NOT NULL,
+    updated_at datetime DEFAULT current_timestamp NOT NULL ON update current_timestamp
+)
