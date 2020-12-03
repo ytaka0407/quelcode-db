@@ -25,5 +25,6 @@ CREATE TABLE chatrooms(
 CREATE TABLE chatroom_joined_list(
     member_id integer(10) NOT NULL REFERENCES members(user_id),
     chatroom_id integer(10) NOT NULL REFERENCES members(user_id),
-    joined_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL
+    joined_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    PRIMARY KEY(member_id, chatroom_id)
 );
