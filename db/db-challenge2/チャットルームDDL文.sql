@@ -29,7 +29,7 @@ CREATE TABLE chatroom_joined_list(
     PRIMARY KEY(member_id, chatroom_id)
 );
 CREATE TABLE posts(
-    post_id integer(10) PRIMARY KEY,
+    post_id integer(10) PRIMARY KEY AUTO_INCREMENT,
     chatroom_id integer(10) NOT NULL REFERENCES chatrooms(room_id),
     post_text varchar(1000) NOT NULL,
     post_filename varchar(10),
@@ -38,4 +38,17 @@ CREATE TABLE posts(
     update_member_id integer(10) NOT NULL REFERENCES members(user_id),
     created_at datetime DEFAULT current_timestamp NOT NULL,
     updated_at datetime DEFAULT current_timestamp NOT NULL ON update current_timestamp
+);
+CREATE TABLE tasks(
+    task_id integer(10) PRIMARY KEY AUTO_INCREMENT,
+    task_description varchar(1000) NOT NULL,
+    assigned_member_id integer(10) NOT NULL REFERENCES members(user_id),
+    status tinyint(1) DEFAULT 0 NOT NULL,
+    due_date datetime,
+    rerated_chatroom_id integer(10) NOT NULL REFERENCES chatrooms(room_id),
+    is_deleted tinyint(1) DEFAULT 0 NOT NULL,
+    create_member_id integer(10) REFERENCES members(user_id),
+    update_member_id integer(10) REFERENCES members(user_id),
+    created_at datetime DEFAULT CURRENT_TIMESTAMP,
+    updated_at datetime DEFAULT CURRENT_TIMESTAMP
 )
