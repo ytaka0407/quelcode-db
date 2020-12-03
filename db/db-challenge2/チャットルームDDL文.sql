@@ -14,7 +14,7 @@ CREATE TABLE chatrooms(
     room_id integer(10) PRIMARY KEY AUTO_INCREMENT,
     room_name varchar(100) NOT NULL,
     room_description varchar(1000),
-    file_transmission tinyint(1) DEFAULT 1 NOT NULL,
+    file_transmission tinyint(1) DEFAULT 0 NOT NULL,
     chat_type tinyint(1) DEFAULT 0 NOT NULL,
     is_deleted tinyint(1) DEFAULT 0 NOT NULL,
     create_member_id integer(10) NOT NULL REFERENCES members(user_id),
