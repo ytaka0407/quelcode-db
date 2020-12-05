@@ -1,3 +1,4 @@
+/*membersテーブルの作成*/
 CREATE TABLE members(
     user_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     mail_address VARCHAR(100) NOT NULL,
@@ -10,6 +11,7 @@ CREATE TABLE members(
     joined_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
 );
+/*chatroomsテーブルの作成*/
 CREATE TABLE chatrooms(
     room_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     room_name VARCHAR(100) NOT NULL,
@@ -22,12 +24,14 @@ CREATE TABLE chatrooms(
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
 );
+/*chatroom_joined_listテーブルの作成*/
 CREATE TABLE chatroom_joined_list(
     member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     chatroom_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     joined_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     PRIMARY KEY(member_id, chatroom_id)
 );
+/*postsテーブルの作成*/
 CREATE TABLE posts(
     post_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     chatroom_id INTEGER(10) NOT NULL REFERENCES chatrooms(room_id),
@@ -39,6 +43,7 @@ CREATE TABLE posts(
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON update CURRENT_TIMESTAMP
 );
+/*tasksテーブルの作成*/
 CREATE TABLE tasks(
     task_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     task_description VARCHAR(1000) NOT NULL,
