@@ -41,7 +41,7 @@ CREATE TABLE posts(
     post_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     update_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON update CURRENT_TIMESTAMP
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
 );
 /*tasksテーブルの作成*/
 CREATE TABLE tasks(
@@ -52,8 +52,8 @@ CREATE TABLE tasks(
     due_date DATETIME,
     rerated_chatroom_id INTEGER(10) NOT NULL REFERENCES chatrooms(room_id),
     is_deleted TINYINT(1) DEFAULT 0 NOT NULL,
-    create_member_id INTEGER(10) REFERENCES members(user_id),
-    update_member_id INTEGER(10) REFERENCES members(user_id),
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
+    create_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
+    update_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
 )
