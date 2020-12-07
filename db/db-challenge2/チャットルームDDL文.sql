@@ -12,7 +12,7 @@ CREATE TABLE members(
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
 );
 /*chatroomsテーブルの作成*/
-CREATE TABLE chatrooms(
+CREATE TABLE chat_rooms(
     id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     room_name VARCHAR(100) NOT NULL,
     room_description VARCHAR(1000),
@@ -24,17 +24,17 @@ CREATE TABLE chatrooms(
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
 );
-/*chatroom_joined_listテーブルの作成*/
-CREATE TABLE chatroom_joined_list(
+/*chat_room_joined_listテーブルの作成*/
+CREATE TABLE chat_room_joined_list(
     member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
-    chatroom_id INTEGER(10) NOT NULL REFERENCES members(user_id),
+    chat_room_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     joined_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    PRIMARY KEY(member_id, chatroom_id)
+    PRIMARY KEY(member_id, chat_room_id)
 );
 /*postsテーブルの作成*/
 CREATE TABLE posts(
     id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
-    chatroom_id INTEGER(10) NOT NULL REFERENCES chatrooms(room_id),
+    chat_room_id INTEGER(10) NOT NULL REFERENCES chat_rooms(room_id),
     post_text VARCHAR(1000) NOT NULL,
     post_filename VARCHAR(10),
     is_deleted TINYINT(1) DEFAULT 0 NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE tasks(
     assigned_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     status TINYINT(1) DEFAULT 0 NOT NULL,
     due_date DATETIME,
-    rerated_chatroom_id INTEGER(10) NOT NULL REFERENCES chatrooms(room_id),
+    rerated_chat_room_id INTEGER(10) NOT NULL REFERENCES chat_rooms(room_id),
     is_deleted TINYINT(1) DEFAULT 0 NOT NULL,
     create_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     update_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
