@@ -24,8 +24,8 @@ CREATE TABLE chat_rooms(
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
 );
-/*chat_room_joined_listテーブルの作成*/
-CREATE TABLE chat_room_joined_list(
+/*chat_rooms_joined_listテーブルの作成*/
+CREATE TABLE chat_rooms_joined_list(
     member_id INTEGER(10) NOT NULL REFERENCES members(id),
     chat_room_id INTEGER(10) NOT NULL REFERENCES members(id),
     joined_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
