@@ -1,6 +1,6 @@
 /*membersテーブルの作成*/
 CREATE TABLE members(
-    user_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
+    id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     mail_address VARCHAR(100) NOT NULL,
     nickname VARCHAR(100) NOT NULL,
     profile VARCHAR(1000),
@@ -13,7 +13,7 @@ CREATE TABLE members(
 );
 /*chatroomsテーブルの作成*/
 CREATE TABLE chatrooms(
-    room_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
+    id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     room_name VARCHAR(100) NOT NULL,
     room_description VARCHAR(1000),
     file_transmission TINYINT(1) DEFAULT 0 NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE chatroom_joined_list(
 );
 /*postsテーブルの作成*/
 CREATE TABLE posts(
-    post_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
+    id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     chatroom_id INTEGER(10) NOT NULL REFERENCES chatrooms(room_id),
     post_text VARCHAR(1000) NOT NULL,
     post_filename VARCHAR(10),
@@ -45,7 +45,7 @@ CREATE TABLE posts(
 );
 /*tasksテーブルの作成*/
 CREATE TABLE tasks(
-    task_id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
+    id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     task_description VARCHAR(1000) NOT NULL,
     assigned_member_id INTEGER(10) NOT NULL REFERENCES members(user_id),
     status TINYINT(1) DEFAULT 0 NOT NULL,
