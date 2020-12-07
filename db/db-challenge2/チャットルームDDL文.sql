@@ -36,7 +36,7 @@ CREATE TABLE posts(
     id INTEGER(10) PRIMARY KEY AUTO_INCREMENT,
     chat_room_id INTEGER(10) NOT NULL REFERENCES chat_rooms(id),
     post_text VARCHAR(1000) NOT NULL,
-    post_filename VARCHAR(10),
+    post_file_name VARCHAR(10),
     is_deleted TINYINT(1) DEFAULT 0 NOT NULL,
     post_member_id INTEGER(10) NOT NULL REFERENCES members(id),
     update_member_id INTEGER(10) NOT NULL REFERENCES members(id),
