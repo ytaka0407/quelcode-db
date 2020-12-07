@@ -27,7 +27,7 @@ CREATE TABLE chat_rooms(
 /*chat_rooms_joined_listテーブルの作成*/
 CREATE TABLE chat_rooms_joined_list(
     member_id INTEGER(10) NOT NULL REFERENCES members(id),
-    chat_room_id INTEGER(10) NOT NULL REFERENCES members(id),
+    chat_room_id INTEGER(10) NOT NULL REFERENCES chat_rooms(id),
     joined_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
     PRIMARY KEY(member_id, chat_room_id)
 );
