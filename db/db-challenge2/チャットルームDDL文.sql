@@ -18,7 +18,7 @@ CREATE TABLE chat_rooms(
     room_description VARCHAR(1000),
     file_transmission TINYINT(1) DEFAULT 0 NOT NULL,
     is_one_on_one TINYINT(1) DEFAULT 0 NOT NULL,
-    is_deleted TINYINT(1) DEFAULT 0 NOT NULL,
+    is_deleted TINYINT(1) DEFAULT 1 NOT NULL,
     create_member_id INTEGER(10) NOT NULL REFERENCES members(id),
     update_member_id INTEGER(10) NOT NULL REFERENCES members(id),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
