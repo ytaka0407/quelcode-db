@@ -1,5 +1,4 @@
 SELECT
-    p.chat_room_id,
     m.nickname,
     p.created_at,
     r.room_name
