@@ -8,7 +8,7 @@ FROM
     JOIN chat_rooms AS r ON p.chat_room_id = r.id
     JOIN (
         SELECT
-            /*服問い合わせにて部屋別の最新投稿時刻を取得*/
+            /*副問い合わせにて部屋別の最新投稿時刻を取得*/
             p.chat_room_id,
             MAX(p.created_at) AS created_at
         FROM
