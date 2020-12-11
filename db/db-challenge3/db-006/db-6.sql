@@ -12,4 +12,4 @@ SELECT
 FROM
     members
 ORDER BY
-    1 asc;
+    id asc;
