@@ -17,5 +17,6 @@ FROM
     chat_rooms
 WHERE
     is_deleted = 0
+    AND room_description like '%ダイレクトチャット'
 ORDER BY
     id asc;
