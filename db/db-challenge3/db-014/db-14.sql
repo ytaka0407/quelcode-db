@@ -1,0 +1,8 @@
+BEGIN;
+
+SET
+    TRANSACTION ISOLATION LEVEL READ COMITTED;
+
+DROP TABLE chat_rooms_joined_list;
+
+COMMIT;
